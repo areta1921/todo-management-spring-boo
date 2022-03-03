@@ -1,13 +1,13 @@
 package net.guides.springboot.todomanagement.model;
 
+import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.Date;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.validation.constraints.Size;
+/**
+ * @author Ramesh Fadatare
+ *
+ */
 
 @Entity
 @Table(name = "todos")
@@ -23,7 +23,7 @@ public class Todo {
 	private String description;
 
 	private Date targetDate;
-	
+
 	public Todo() {
 		super();
 	}
